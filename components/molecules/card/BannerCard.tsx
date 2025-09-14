@@ -1,14 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 
-/**
- * Our BannerCard is a reusable UI component used to display a top section of our website
- *
- * @property featured image, a heading, author name and publication date.
- *
- * @returns React component that can be easily integrated into any web application.
- */
-
 const BannerCard = () => {
    return (
       <div className="relative rounded-xl font-work mb-24">
@@ -16,20 +8,19 @@ const BannerCard = () => {
             width="1216"
             height="600"
             alt={`banner_image`}
-            src="https://placehold.co/1216x600"
+            src="https://res.cloudinary.com/dpgspconw/image/upload/v1757848297/misshosting_sqdbuz.avif"
             className="rounded-xl"
          />
          <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-[0_12px_24px_-6px] shadow-base-content/20">
             <div className="w-fit text-primary-content px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4 font-medium">
-               Technology
+               Web Hosting
             </div>
             <h3>
                <Link
-                  href="/"
+                  href="/post"
                   className="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500"
                >
-                  The Impact of Technology on the Workplace: How Technology is
-                  Changing
+                  MissHosting Review: Is This the Stress-Free Web Host You've Been Looking For?
                </Link>
             </h3>
             <div className="mt-6 flex items-center gap-5">
